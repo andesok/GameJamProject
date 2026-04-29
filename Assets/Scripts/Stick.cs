@@ -6,14 +6,17 @@ public class Stick : MonoBehaviour, IPickupable, IUsable
     [SerializeField] private float _attackRange = 3f;
     private GameObject PlayerMesh;
 
-    [SerializeField] private float _throwDamage = 15f;
-    [SerializeField] private float _throwSpinSpeed = 720f;
-    [SerializeField] private int _durability = 20;
+    [SerializeField] private float _durability = 20;
 
     private bool _isThrown = false;
     private GameObject _thrower;
     private Rigidbody _rb;
 
+
+    private void Awake()
+    {
+        _rb = GetComponent<Rigidbody>();
+    }
     public void OnPickedUp(GameObject picker)
     {
 
@@ -43,10 +46,8 @@ public class Stick : MonoBehaviour, IPickupable, IUsable
 
         if (Physics.Raycast(ray, out hit, _attackRange))
         {
-            // Проверяем, есть ли на объекте скрипт Enemy
             Enemy enemy = hit.collider.GetComponent<Enemy>();
 
-            // Если скрипт не на самом объекте — ищем в родителе
             if (enemy == null)
             {
                 enemy = hit.collider.GetComponentInParent<Enemy>();
@@ -56,7 +57,6 @@ public class Stick : MonoBehaviour, IPickupable, IUsable
             {
                 enemy.TakeDamage(_damage);
                 DurabilityCost(1);
-                Debug.Log($"Нанесён урон {_damage} врагу {enemy.name}");
             }
         }
     }
@@ -66,7 +66,6 @@ public class Stick : MonoBehaviour, IPickupable, IUsable
         Inventory inventory = user.GetComponent<Inventory>();
         if (inventory != null)
         {
-            // Запоминаем кто бросил
             _thrower = user;
             _isThrown = true;
 
@@ -79,21 +78,25 @@ public class Stick : MonoBehaviour, IPickupable, IUsable
         if (!_isThrown) return;
         if (_thrower != null && collision.gameObject == _thrower) return;
 
-        // Ищем Enemy на объекте И В РОДИТЕЛЯХ
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
         if (enemy == null)
-            enemy = collision.gameObject.GetComponentInParent<Enemy>();  // ← ВОТ ЭТО ДОЛЖНО НАЙТИ
+            enemy = collision.gameObject.GetComponentInParent<Enemy>();
 
         if (enemy != null)
         {
-            enemy.TakeDamage(_throwDamage);
-            Debug.Log($"Бросок нанёс {_throwDamage} урона врагу {enemy.name}");
+            float _finalDamage = CalculateThrowDamage();
+            enemy.TakeDamage(_finalDamage);
+            DurabilityCost(2);
+            _isThrown = false;
         }
-        else
-        {
-            Debug.Log($"Enemy не найден на {collision.gameObject.name} и его родителях");
-        }
+    }
 
-        _isThrown = false;
+    private float CalculateThrowDamage()
+    {
+        float speed = _rb.linearVelocity.magnitude;
+
+        float bonus = speed * 0.5f;
+
+        return _damage + bonus;
     }
 }

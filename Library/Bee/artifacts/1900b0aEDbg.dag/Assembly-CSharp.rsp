@@ -464,6 +464,7 @@
 -analyzer:"D:/Programs/Unity/6000.4.1f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Programs/Unity/6000.4.1f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"D:/Programs/Unity/6000.4.1f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/Player/animationStateController.cs"
 "Assets/Scripts/Ball.cs"
 "Assets/Scripts/CameraFollow.cs"
 "Assets/Scripts/Enemy.cs"

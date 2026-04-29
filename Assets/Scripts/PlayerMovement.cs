@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -10,14 +11,14 @@ public class PlayerMovement : MonoBehaviour
 
     private InputAction moveAction;
 
-    private Vector2 moveVals;
+    public Vector2 moveVals;
     private Vector3 moveDirection;
 
     public float speed = 5.0f;
     public float pushForce = 10f;
     private float smoothRotation = 0.05f;
     public float gravity = -9.81f;
-    private Vector3 velocity;
+    public Vector3 velocity;
     private float currentRotationVelocity;
 
     private void OnEnable()
@@ -32,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         moveAction = InputSystem.actions.FindAction("Move");
+        Debug.Log(PlayerMesh);
     }
 
     void Update()
