@@ -2,33 +2,31 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float health;
-    public float maxHealth = 100;
-
-    [SerializeField] private Healthbar healthbar;
+    private Health health;
 
     private void Awake()
     {
-        health = maxHealth;    
+        health = GetComponent<Health>();
     }
 
-    void Start()
+    private void OnEnable()
     {
-        healthbar.UpdateHealthBar(maxHealth,health);
-    }
-
-    void Update()
-    {
-        
-    }
-
-    public void TakeDamage(float damage)
-    {
-        health -= damage;
-        if (health < 0)
+        if (health != null)
         {
-            health = 0;
+            health.OnDeath += HandleDeath;
         }
-        healthbar.UpdateHealthBar(maxHealth,health);
+    }
+
+    private void OnDisable()
+    {
+        if (health != null)
+        {
+            health.OnDeath -= HandleDeath;
+        }
+    }
+
+    private void HandleDeath()
+    {
+        Destroy(gameObject);
     }
 }

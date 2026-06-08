@@ -43,22 +43,15 @@ public class Stick : MonoBehaviour, IPickupable, IUsable
         RaycastHit hit;
 
         Debug.DrawRay(ray.origin, ray.direction * _attackRange, Color.red, 1f);
-
+        /*
         if (Physics.Raycast(ray, out hit, _attackRange))
         {
-            Enemy enemy = hit.collider.GetComponent<Enemy>();
-
-            if (enemy == null)
-            {
-                enemy = hit.collider.GetComponentInParent<Enemy>();
-            }
-
-            if (enemy != null)
-            {
-                enemy.TakeDamage(_damage);
-                DurabilityCost(1);
-            }
+            if (hit.coll)
+            float finalDamage = CalculateThrowDamage();
+            hit.TakeDamage(finalDamage);
+            AttackReset();
         }
+        */
     }
 
     public void OnSecondaryUse(GameObject user)
@@ -78,16 +71,11 @@ public class Stick : MonoBehaviour, IPickupable, IUsable
         if (!_isThrown) return;
         if (_thrower != null && collision.gameObject == _thrower) return;
 
-        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-        if (enemy == null)
-            enemy = collision.gameObject.GetComponentInParent<Enemy>();
-
-        if (enemy != null)
+        if (collision.gameObject.TryGetComponent<Health>(out Health targetHealth))
         {
-            float _finalDamage = CalculateThrowDamage();
-            enemy.TakeDamage(_finalDamage);
-            DurabilityCost(2);
-            _isThrown = false;
+            float finalDamage = CalculateThrowDamage();
+            targetHealth.TakeDamage(finalDamage);
+            AttackReset();
         }
     }
 
@@ -98,5 +86,11 @@ public class Stick : MonoBehaviour, IPickupable, IUsable
         float bonus = speed * 0.5f;
 
         return _damage + bonus;
+    }
+
+    private void AttackReset()
+    {
+        DurabilityCost(2);
+        _isThrown = false;
     }
 }

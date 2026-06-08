@@ -22,7 +22,6 @@ public class Inventory : MonoBehaviour
 
     private void Update()
     {
-        // Подбор по клавише E
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (_currentItem == null)
@@ -31,29 +30,21 @@ public class Inventory : MonoBehaviour
                 DropItem();
         }
 
-        // Использование предмета в руках
         if (_currentItem != null)
         {
             if (Input.GetMouseButtonDown(0)) _usableInterface?.OnPrimaryUse(gameObject);
 
             if (Input.GetMouseButtonDown(1)) _usableInterface?.OnSecondaryUse(gameObject);
         }
-
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            _playerScript.TakeDamage(10f);
-        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        // Проверяем, есть ли на объекте интерфейс подбора
         if (other.TryGetComponent<IPickupable>(out _))
         {
             if (!_nearbyItems.Contains(other.gameObject))
             {
                 _nearbyItems.Add(other.gameObject);
-                // Опционально: подсветить предмет
             }
         }
     }
@@ -63,13 +54,11 @@ public class Inventory : MonoBehaviour
         if (_nearbyItems.Contains(other.gameObject))
         {
             _nearbyItems.Remove(other.gameObject);
-            // Опционально: убрать подсветку
         }
     }
 
     private void TryPickupNearest()
     {
-        // Убираем из списка все null (на случай если предмет уничтожился)
         _nearbyItems.RemoveAll(item => item == null);
 
         if (_nearbyItems.Count == 0)
@@ -78,7 +67,6 @@ public class Inventory : MonoBehaviour
             return;
         }
 
-        // Находим ближайший предмет
         GameObject nearest = GetNearestItem();
 
         if (nearest != null)
@@ -109,30 +97,27 @@ public class Inventory : MonoBehaviour
 
     private void PickupItem(GameObject item)
     {
-        // Убираем предмет из списка ближайших
+
         _nearbyItems.Remove(item);
 
         _currentItem = item;
 
-        // Получаем интерфейсы
         _pickupInterface = item.GetComponent<IPickupable>();
         _usableInterface = item.GetComponent<IUsable>();
 
         _pickupInterface.OnPickedUp(gameObject);
 
-        // Физическое прикрепление к руке
+
         item.transform.SetParent(_holdPoint);
         item.transform.localPosition = Vector3.zero;
         item.transform.localRotation = Quaternion.identity;
 
-        // Отключаем физику
         if (item.TryGetComponent<Rigidbody>(out var rb))
         {
             rb.isKinematic = true;
             rb.detectCollisions = false;
         }
 
-        // Отключаем коллайдер
         if (item.TryGetComponent<Collider>(out var col))
             col.enabled = false;
     }
@@ -141,7 +126,6 @@ public class Inventory : MonoBehaviour
     {
         if (_currentItem == null) return;
 
-        // Включаем физику обратно
         if (_currentItem.TryGetComponent<Rigidbody>(out var rb))
         {
             rb.isKinematic = false;
@@ -151,22 +135,17 @@ public class Inventory : MonoBehaviour
         if (_currentItem.TryGetComponent<Collider>(out var col))
             col.enabled = true;
 
-        // Открепляем
         _currentItem.transform.SetParent(null);
 
-        // Сообщаем предмету, что его выбросили
         _pickupInterface?.OnDropped();
 
-        // Небольшой импульс вперёд при выбрасывании
         rb?.AddForce(PlayerMesh.transform.forward * 3f, ForceMode.Impulse);
 
-        // Добавляем обратно в список, если он всё ещё в триггере
         if (_currentItem != null && !_nearbyItems.Contains(_currentItem))
         {
             _nearbyItems.Add(_currentItem);
         }
 
-        // Сбрасываем ссылки
         _currentItem = null;
         _pickupInterface = null;
         _usableInterface = null;
@@ -176,7 +155,6 @@ public class Inventory : MonoBehaviour
     {
         if (_currentItem == null) return;
 
-        // Включаем физику обратно
         if (_currentItem.TryGetComponent<Rigidbody>(out var rb))
         {
             rb.isKinematic = false;
@@ -186,19 +164,15 @@ public class Inventory : MonoBehaviour
         if (_currentItem.TryGetComponent<Collider>(out var col))
             col.enabled = true;
 
-        // Открепляем
         _currentItem.transform.SetParent(null);
 
-        // Сообщаем предмету, что его выбросили
         _pickupInterface?.OnDropped();
 
-        // Импульс вперёд при выбрасывании
         if (_currentItem.TryGetComponent<Rigidbody>(out var rb2))
         {
             rb2.AddForce(PlayerMesh.transform.forward * dropForce + Vector3.up * 3f, ForceMode.Impulse);
         }
 
-        // Сбрасываем ссылки
         _currentItem = null;
         _pickupInterface = null;
         _usableInterface = null;

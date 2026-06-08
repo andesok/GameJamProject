@@ -51,12 +51,13 @@ public class Ball : MonoBehaviour, IPickupable, IUsable
             {
                 enemy = hit.collider.GetComponentInParent<Enemy>();
             }
-
+            /*
             if (enemy != null)
             {
                 enemy.TakeDamage(_damage);
                 DurabilityCost(1);
             }
+            */
         }
     }
 
@@ -83,7 +84,7 @@ public class Ball : MonoBehaviour, IPickupable, IUsable
         if (enemy != null)
         {
             float _finalDamage = CalculateThrowDamage();
-            enemy.TakeDamage(_finalDamage);
+            //enemy.TakeDamage(_finalDamage);
             DurabilityCost(2);
             _isThrown = false;
         }

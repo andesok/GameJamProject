@@ -3,40 +3,48 @@
   "WorkspaceRootPath": "D:\\Programs\\Unity Projects\\GameJamProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\player\\animationstatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\animationstatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\stick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\player\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\stick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\programs\\unity projects\\gamejamproject\\assets\\scripts\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,24 +54,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "animationStateController.cs",
-              "DocumentMoniker": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Player\\animationStateController.cs",
-              "RelativeDocumentMoniker": "Assets\\Player\\animationStateController.cs",
-              "ToolTip": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Player\\animationStateController.cs",
-              "RelativeToolTip": "Assets\\Player\\animationStateController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABlAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "CharacterMovement.cs",
+              "DocumentMoniker": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\CharacterMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterMovement.cs",
+              "ToolTip": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\CharacterMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CharacterMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T10:01:13.719Z",
+              "WhenOpened": "2026-06-08T17:40:27.49Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerInput.cs",
+              "DocumentMoniker": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Player\\PlayerInput.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\PlayerInput.cs",
+              "ToolTip": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Player\\PlayerInput.cs",
+              "RelativeToolTip": "Assets\\Player\\PlayerInput.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T17:39:51.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Health.cs",
+              "DocumentMoniker": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Health.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Health.cs",
+              "ToolTip": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Health.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Health.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T20:40:56.405Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
+              "ToolTip": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T01:39:18.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Healthbar.cs",
               "DocumentMoniker": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Healthbar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Healthbar.cs",
@@ -75,69 +120,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Enemy.cs",
               "DocumentMoniker": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
               "ToolTip": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Enemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-15T02:47:37.135Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Player.cs",
-              "DocumentMoniker": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
-              "ToolTip": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T01:39:18.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Stick.cs",
               "DocumentMoniker": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Stick.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Stick.cs",
               "ToolTip": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Stick.cs",
               "RelativeToolTip": "Assets\\Scripts\\Stick.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-15T02:11:03.398Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Ball.cs",
               "DocumentMoniker": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Ball.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Ball.cs",
               "ToolTip": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Ball.cs",
               "RelativeToolTip": "Assets\\Scripts\\Ball.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAIwFkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T02:11:00.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T02:11:00.049Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Inventory.cs",
               "DocumentMoniker": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Inventory.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory.cs",
               "ToolTip": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Inventory.cs",
               "RelativeToolTip": "Assets\\Scripts\\Inventory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T23:48:58.084Z"
+              "WhenOpened": "2026-04-14T23:48:58.084Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "Interfaces.cs",
               "DocumentMoniker": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\Interfaces.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Interfaces.cs",
@@ -145,12 +177,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Interfaces.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T22:10:35.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T22:10:35.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "D:\\Programs\\Unity Projects\\GameJamProject\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
@@ -158,8 +189,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T19:57:33.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T19:57:33.278Z"
             }
           ]
         }

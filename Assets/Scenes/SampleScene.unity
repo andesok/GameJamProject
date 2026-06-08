@@ -963,9 +963,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 528354490}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e9b1f5ef28f3e349998915f0fa18dc1, type: 3}
+  m_Script: {fileID: 11500000, guid: df3f62a8cc387d14b906fc74d9b3ba5a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player
+  m_EditorClassIdentifier: Assembly-CSharp::Health
   health: 0
   maxHealth: 100
   healthbar: {fileID: 765604675}
