@@ -98,4 +98,9 @@ public class Ball : MonoBehaviour, IPickupable, IUsable
             Destroy(gameObject);
         }
     }
+    public void SetThrower(GameObject thrower)
+    {
+        _thrower = thrower;
+        _isThrown = true;
+    }
 }

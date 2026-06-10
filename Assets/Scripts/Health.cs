@@ -3,6 +3,7 @@ using System;
 
 public class Health : MonoBehaviour
 {
+
     public float health;
     public float maxHealth = 100;
 
@@ -12,7 +13,7 @@ public class Health : MonoBehaviour
 
     private void Awake()
     {
-        health = maxHealth;
+        health = maxHealth; // всегда стартует с макс HP
         UpdateHealthBar(maxHealth, health);
     }
 
