@@ -3,7 +3,7 @@ using UnityEngine;
 public class animationStateController : MonoBehaviour
 {
     Animator animator;
-    public CharacterMovement characterMovement;
+    public PlayerMovement playerMovement;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -11,7 +11,7 @@ public class animationStateController : MonoBehaviour
 
     void Update()
     {
-        float speed = new Vector3(characterMovement.moveVals.x, 0, characterMovement.moveVals.y).magnitude;
+        float speed = new Vector3(playerMovement.moveVals.x, 0, playerMovement.moveVals.y).magnitude;
         if (speed > 0)
         {
             animator.SetBool("isWalking", true);

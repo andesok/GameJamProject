@@ -37,26 +37,21 @@ public class Stick : MonoBehaviour, IPickupable, IUsable
 
     public void OnPrimaryUse(GameObject user)
     {
-        Ray ray = new Ray(user.transform.position, user.transform.forward);
+        PlayerMesh = user.GetComponent<PlayerMovement>().PlayerMesh;
+
+        Ray ray = new Ray(PlayerMesh.transform.position, PlayerMesh.transform.forward);
         RaycastHit hit;
 
         Debug.DrawRay(ray.origin, ray.direction * _attackRange, Color.red, 1f);
-
+        /*
         if (Physics.Raycast(ray, out hit, _attackRange))
         {
-            Enemy enemy = hit.collider.GetComponent<Enemy>();
-
-            if (enemy == null)
-            {
-                enemy = hit.collider.GetComponentInParent<Enemy>();
-            }
-
-            if (enemy != null)
-            {
-                enemy.health.TakeDamage(_damage);
-                DurabilityCost(1);
-            }
+            if (hit.coll)
+            float finalDamage = CalculateThrowDamage();
+            hit.TakeDamage(finalDamage);
+            AttackReset();
         }
+        */
     }
 
     public void OnSecondaryUse(GameObject user)
@@ -97,5 +92,10 @@ public class Stick : MonoBehaviour, IPickupable, IUsable
     {
         DurabilityCost(2);
         _isThrown = false;
+    }
+    public void SetThrower(GameObject thrower)
+    {
+        _thrower = thrower;
+        _isThrown = true;
     }
 }

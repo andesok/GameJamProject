@@ -61,22 +61,22 @@ MonoBehaviour:
   - groupType: UnityEngine.CapsuleCollider2D, UnityEngine.Physics2DModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     collapsed: 0
-  - groupType: UnityEngine.LightProbeProxyVolume, UnityEngine.CoreModule, Version=0.0.0.0,
+  - groupType: UnityEngine.TrailRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     collapsed: 0
-  - groupType: UnityEngine.TrailRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
+  - groupType: UnityEngine.LightProbeProxyVolume, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     collapsed: 0
   - groupType: UnityEngine.LineRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     collapsed: 0
-  - groupType: UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule, Version=0.0.0.0,
+  - groupType: UnityEngine.LightProbeGroup, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     collapsed: 0
-  - groupType: UnityEngine.LightProbeGroup, UnityEngine.CoreModule, Version=0.0.0.0,
+  - groupType: UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     collapsed: 0
   m_LastPivotModeTypeString: UnityEditor.CenterPivotMode, UnityEditor.CoreModule,
     Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_LastPivotRotationTypeString: UnityEditor.LocalPivotRotation, UnityEditor.CoreModule,
+  m_LastPivotRotationTypeString: UnityEditor.GridPivotRotation, UnityEditor.CoreModule,
     Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

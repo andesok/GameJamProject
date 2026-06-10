@@ -11,13 +11,11 @@ GameObject:
   - component: {fileID: 5356875020078789214}
   - component: {fileID: 3119863516014205116}
   - component: {fileID: 8833657116267404822}
+  - component: {fileID: 5106380886840663427}
+  - component: {fileID: 6777864184529380009}
   - component: {fileID: 7535843068701553105}
   - component: {fileID: 7946579127557330936}
-  - component: {fileID: 3057775842547254553}
-  - component: {fileID: 6777864184529380009}
-  - component: {fileID: 4457207454262747488}
-  - component: {fileID: 3002527018716860897}
-  - component: {fileID: 7608835944858993525}
+  - component: {fileID: 8982413473229470113}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -99,36 +97,8 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7535843068701553105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087686463214995428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df3f62a8cc387d14b906fc74d9b3ba5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Health
-  health: 0
-  maxHealth: 100
-  healthbar: {fileID: 8769749527065283083}
---- !u!114 &7946579127557330936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087686463214995428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3defe2447029cdd4b80b8e65621188af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  health: {fileID: 0}
---- !u!143 &3057775842547254553
-CharacterController:
+--- !u!136 &5106380886840663427
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -142,15 +112,13 @@ CharacterController:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 2
+  serializedVersion: 2
   m_Radius: 0.5000001
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
+  m_Height: 2
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &6777864184529380009
 Rigidbody:
@@ -179,7 +147,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &4457207454262747488
+--- !u!114 &7535843068701553105
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,12 +156,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1087686463214995428}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbaffac6d49ed9546b60eb6c1a14a520, type: 3}
+  m_Script: {fileID: 11500000, guid: df3f62a8cc387d14b906fc74d9b3ba5a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterMovement
-  moveVals: {x: 0, y: 0}
-  speed: 5
---- !u!114 &3002527018716860897
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  health: 0
+  maxHealth: 100
+  healthbar: {fileID: 8769749527065283083}
+--- !u!114 &7946579127557330936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -202,25 +171,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 1087686463214995428}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cef7b9e720429bf4697460ef78fa5be9, type: 3}
+  m_Script: {fileID: 11500000, guid: 3defe2447029cdd4b80b8e65621188af, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyInput
-  characterMovement: {fileID: 4457207454262747488}
-  inventory: {fileID: 7608835944858993525}
---- !u!114 &7608835944858993525
-MonoBehaviour:
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+--- !u!195 &8982413473229470113
+NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087686463214995428}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8c83d88dd9dd0640be7edbad86927c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Inventory
-  _holdPoint: {fileID: 0}
-  dropForce: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5000001
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1302720892116473491
 GameObject:
   m_ObjectHideFlags: 0
