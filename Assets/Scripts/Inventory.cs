@@ -11,7 +11,6 @@ public class Inventory : MonoBehaviour
     private Player _playerScript;
 
     [SerializeField] private float dropForce =1f;
-    [SerializeField] private GameObject PlayerMesh;
 
     private List<GameObject> _nearbyItems = new List<GameObject>();
 
@@ -20,22 +19,22 @@ public class Inventory : MonoBehaviour
         _playerScript = GetComponent<Player>();
     }
 
-    private void Update()
+    public void TryPickUpItem()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if (_currentItem == null)
-                TryPickupNearest();
-            else
-                DropItem();
-        }
+        if (_currentItem == null)
+            TryPickupNearest();
+        else
+            DropItem();
+    }
 
-        if (_currentItem != null)
-        {
-            if (Input.GetMouseButtonDown(0)) _usableInterface?.OnPrimaryUse(gameObject);
+    public void FirstUse()
+    {
+        if (_currentItem != null) _usableInterface?.OnPrimaryUse(gameObject);
+    }
 
-            if (Input.GetMouseButtonDown(1)) _usableInterface?.OnSecondaryUse(gameObject);
-        }
+    public void SecondUse()
+    {
+        if (_currentItem != null) _usableInterface?.OnSecondaryUse(gameObject);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -139,7 +138,7 @@ public class Inventory : MonoBehaviour
 
         _pickupInterface?.OnDropped();
 
-        rb?.AddForce(PlayerMesh.transform.forward * 3f, ForceMode.Impulse);
+        rb?.AddForce(transform.forward * 3f, ForceMode.Impulse);
 
         if (_currentItem != null && !_nearbyItems.Contains(_currentItem))
         {
@@ -170,7 +169,7 @@ public class Inventory : MonoBehaviour
 
         if (_currentItem.TryGetComponent<Rigidbody>(out var rb2))
         {
-            rb2.AddForce(PlayerMesh.transform.forward * dropForce + Vector3.up * 3f, ForceMode.Impulse);
+            rb2.AddForce(transform.forward * dropForce + Vector3.up * 3f, ForceMode.Impulse);
         }
 
         _currentItem = null;

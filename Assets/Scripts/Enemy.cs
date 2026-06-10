@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private Health health;
+    public Health health;
 
     private void Awake()
     {

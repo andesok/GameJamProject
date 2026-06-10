@@ -1,4 +1,3 @@
-using Unity.ProjectAuditor.Editor;
 using UnityEngine;
 using UnityEngine.UI;
 

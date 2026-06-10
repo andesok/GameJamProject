@@ -37,21 +37,26 @@ public class Stick : MonoBehaviour, IPickupable, IUsable
 
     public void OnPrimaryUse(GameObject user)
     {
-        PlayerMesh = user.GetComponent<PlayerMovement>().PlayerMesh;
-
-        Ray ray = new Ray(PlayerMesh.transform.position, PlayerMesh.transform.forward);
+        Ray ray = new Ray(user.transform.position, user.transform.forward);
         RaycastHit hit;
 
         Debug.DrawRay(ray.origin, ray.direction * _attackRange, Color.red, 1f);
-        /*
+
         if (Physics.Raycast(ray, out hit, _attackRange))
         {
-            if (hit.coll)
-            float finalDamage = CalculateThrowDamage();
-            hit.TakeDamage(finalDamage);
-            AttackReset();
+            Enemy enemy = hit.collider.GetComponent<Enemy>();
+
+            if (enemy == null)
+            {
+                enemy = hit.collider.GetComponentInParent<Enemy>();
+            }
+
+            if (enemy != null)
+            {
+                enemy.health.TakeDamage(_damage);
+                DurabilityCost(1);
+            }
         }
-        */
     }
 
     public void OnSecondaryUse(GameObject user)
