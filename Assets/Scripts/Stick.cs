@@ -93,4 +93,9 @@ public class Stick : MonoBehaviour, IPickupable, IUsable
         DurabilityCost(2);
         _isThrown = false;
     }
+    public void SetThrower(GameObject thrower)
+    {
+        _thrower = thrower;
+        _isThrown = true;
+    }
 }
